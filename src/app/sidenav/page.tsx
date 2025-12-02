@@ -1,3 +1,4 @@
+"use client";
 import Link from 'next/link'; // Import Link
 import { useState } from 'react'; // Import useState for dropdown toggle
 import { FaFile, FaHome } from 'react-icons/fa';

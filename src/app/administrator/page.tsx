@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import { IP } from "../../../config";
 import Sidenav from "../sidenav/page";
