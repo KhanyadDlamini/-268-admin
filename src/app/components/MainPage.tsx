@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Sidenav from "./Sidenav";
 import Topnav from "./Topnav";
-export const IP = process.env.NEXT_PUBLIC_API_IP as string;
+const IP = process.env.NEXT_PUBLIC_API_IP as string;
 
 export default function MainPage() {
     const [participantsData, setParticipantsData] = useState<any[]>([]);

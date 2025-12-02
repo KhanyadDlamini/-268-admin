@@ -5,8 +5,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css"; // Import CSS for styling
 import Sidenav from "../components/Sidenav";
 import Topnav from "../components/Topnav";
-export const IP = process.env.NEXT_PUBLIC_API_IP as string;
-
+const IP = process.env.NEXT_PUBLIC_API_IP as string;
 
 export default function Register() {
     const [formData, setFormData] = React.useState({
@@ -50,7 +49,6 @@ export default function Register() {
             role,
         };
 
-        console.log("REGISTER COMPANY.....................", payload);
 
         try {
             const response = await fetch(`${IP}/registerCompany`, {
