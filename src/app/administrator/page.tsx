@@ -1,8 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import { IP } from "../../../config";
-import Sidenav from "../sidenav/page";
-import Topnav from "../topnav/page";
+import Sidenav from "../components/Sidenav";
+import Topnav from "../components/Topnav";
+
 
 export default function MainPage({ clients }: { clients: { user_id: string; email: string; name: string }[] | undefined }) {
     const [participantsData, setParticipantsData] = useState<any[]>([]);

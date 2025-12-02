@@ -4,8 +4,9 @@ import React, { useEffect, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css"; // Import CSS for styling
 import { IP } from "../../../config";
-import Sidenav from "../sidenav/page";
-import Topnav from "../topnav/page";
+import Sidenav from "../components/Sidenav";
+import Topnav from "../components/Topnav";
+
 
 export default function Register() {
     const [formData, setFormData] = React.useState({
