@@ -5,7 +5,6 @@ import { FaLock, FaUser } from "react-icons/fa";
 import "react-phone-input-2/lib/style.css"; // Make sure to import the CSS for styling
 
 export const IP = process.env.NEXT_PUBLIC_API_IP;
-console.log("API IP:", IP);
 
 export default function LoginPage() {
   const [user_id, setUser_id] = useState("");
