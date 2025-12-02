@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import { IP } from "../../config";
 import Sidenav from "./Sidenav";
 import Topnav from "./Topnav";
+export const IP = process.env.NEXT_PUBLIC_API_IP as string;
 
 export default function MainPage() {
     const [participantsData, setParticipantsData] = useState<any[]>([]);
